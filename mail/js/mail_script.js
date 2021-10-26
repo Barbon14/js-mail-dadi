@@ -26,7 +26,19 @@ for (i = 0; i < invitati.length; i++) {
     // se trovo una corrispondenza ammetto l'utente, altrimenti gli nego l'accesso
     if (mailUtente === invitati[i]) {
         accessoConsentito = true;
-    }
+        break;
+    } 
+    
+    // contollo alternativo, in questo caso non mi servirebbe la successiva parte di codice per scrivere in pagina il risultato
+
+    // if (mailUtente === invitati[i]) {
+    //     console.log("accesso consentito");
+    //     element.innerHTML = "Accesso consentito";
+    //     break;
+    // } else {
+    //     console.log("accesso negato");
+    //     element.innerHTML = "Accesso negato";
+    // }
 }
 
 // scrivo in pagina se l'utente può avere l'accesso oppure no
